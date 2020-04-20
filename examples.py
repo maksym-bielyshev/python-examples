@@ -1,4 +1,19 @@
 # What is the output of this code?
+def write(lst, text):
+    lst.append(text)
+a = 50
+b = a ** 2
+c = [a]
+if(b % a == 0):
+    write(c, b)
+else:
+    write(c, a)
+print(c[-1])
+
+# Output: 2500
+
+
+# What is the output of this code?
 x = 5
 print([y // 2 for y in range(6)][x])
 
