@@ -1,4 +1,31 @@
 # What is the output of this code?
+def meth():
+    g = [2, 3, 4, 5, 7]
+    for i in g:
+        if i % 2 == 1:
+            yield i
+for i in meth():
+    print(i)
+    break
+
+# Output: 3
+
+
+# What is the output of this code?
+x = 5
+
+
+def foo():
+    print(x)
+    pass
+foo()
+
+# Output: 5
+
+
+# What is the output of this code?
+
+
 d = {'A': 3, 'B': 8}
 for n in range(2, 12, 2):
     d['A'] += n
@@ -6,6 +33,7 @@ for n in range(2, 12, 2):
 print(d['A'] + d['B'])
 
 # Output: 11
+
 
 # What is the output of this code?
 
