@@ -1,4 +1,20 @@
 # What is the output of this code?
+listOne = [1, 3, 5, 7, 9]
+listTwo = [2, 5, 4, 3, 9]
+for i in range(len(listOne)):
+    if listOne[i] == listTwo[i]:
+        print(listOne[i] * i)
+
+# Output: 36
+
+# What is the output of this code?
+a = [1, 2, 3, 4, 5]
+print(a[-1:None:-2])
+
+# Output: [5, 3, 1]
+
+
+# What is the output of this code?
 class Myclass:
     n = 0
 
