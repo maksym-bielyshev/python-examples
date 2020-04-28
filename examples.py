@@ -1,4 +1,62 @@
-# What is the output of this code?
+x = 25 % 5
+y = 4**2 // 5
+print((x + y)**2)
+# Output: 9
+
+
+a = [1, 2, 3]
+b = 3 * a
+b.remove(2)
+print(b.index(2) * b.count(2))
+# Output: 6
+
+
+arr = {0, 1, 2, 3, 4}
+x = arr[len(arr) - 1]
+y = x % 4
+print(y)
+# Output: TypeError: 'set' object does not support indexing
+
+
+class L(list):
+    n = 0
+
+    def __init__(self):
+        L.n += 1
+a = L()
+b = L()
+try:
+    c = a + b
+    print(a.n, end="")
+    print(c.n)
+except:
+    print(0)
+# Output: 20
+
+
+print(chr(ord('A')))
+# Output: A
+
+
+a = 'herro solo'
+a[2] = 'l'
+print(a[2])
+# Output: TypeError: 'str' object does not support item assignment
+
+
+a = 1
+b = 3
+if(a <= 5 and b < 9):
+    if (a == 4):
+        b = 20
+    a += 1
+    b -= 1
+if(b <= 20):
+    a = -5
+print(a)
+# Output: -5
+
+
 def recf(lst, s=0):
     if len(lst) == 0:
         return s
@@ -7,10 +65,9 @@ def recf(lst, s=0):
         return recf(lst, s)
 s = [5 for i in range(10)]
 print(recf(s))
-
 # Output: 50
 
-# What is the output of this code?
+
 a = list()
 b = dict()
 c = dict()
@@ -19,25 +76,20 @@ for n in range(3):
     b[n] = a
     c[n] = list(a)
 print(b == c)
-
 # Output: False
 
-# What is the output of this code?
+
 listOne = [1, 3, 5, 7, 9]
 listTwo = [2, 5, 4, 3, 9]
 for i in range(len(listOne)):
     if listOne[i] == listTwo[i]:
         print(listOne[i] * i)
-
 # Output: 36
 
-# What is the output of this code?
+
 a = [1, 2, 3, 4, 5]
 print(a[-1:None:-2])
-
 # Output: [5, 3, 1]
-
-# What is the output of this code?
 
 
 class Myclass:
@@ -48,28 +100,23 @@ class Myclass:
 obj = Myclass()
 obj.change(1)
 print(obj.n)
-
 # Output: 0
 
-# What is the output of this code?
+
 print('y', end="=")
 x, y = 7, 9
 y *= x
 y %= 8
 print(y)
-
 # Output: y=7
 
-# What is the output of this code?
+
 lst = [34, 67, 34]
 if lst.sort() == sorted(lst):
     print('true')
 else:
     print('false')
-
 # Output: false
-
-# What is the output of this code?
 
 
 def fun(x):
@@ -78,10 +125,7 @@ def fun(x):
     else:
         return x * fun(x - 1)
 print(fun(5))
-
 # Output: 120
-
-# What is the output of this code?
 
 
 def meth():
@@ -92,10 +136,9 @@ def meth():
 for i in meth():
     print(i)
     break
-
 # Output: 3
 
-# What is the output of this code?
+
 x = 5
 
 
@@ -103,19 +146,15 @@ def foo():
     print(x)
     pass
 foo()
-
 # Output: 5
 
-# What is the output of this code?
+
 d = {'A': 3, 'B': 8}
 for n in range(2, 12, 2):
     d['A'] += n
     d['B'] -= n
 print(d['A'] + d['B'])
-
 # Output: 11
-
-# What is the output of this code?
 
 
 def write(lst, text):
@@ -128,28 +167,24 @@ if(b % a == 0):
 else:
     write(c, a)
 print(c[-1])
-
 # Output: 2500
 
-# What is the output of this code?
+
 x = 5
 print([y // 2 for y in range(6)][x])
-
 # Output: 2
 
-# What is the output of this code?
+
 x = 100.1205
 y = str(x)[6]
 print('{:.{}f}'.format(x, y))
-
 # Output: 100
 
-# What is the output of this code?
+
 a = []
 b = [a, a, a]
 for x in b:
     n = len(x)
     x.append(n)
 print(b[0])
-
 # Output: [0, 1, 2]
