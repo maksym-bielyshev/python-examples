@@ -1,3 +1,33 @@
+s = []
+for i in s:
+    s.append(0)
+print(len(s))
+# Output: 0
+
+x = 35
+y = 27
+z = 8
+r = (44 - x / z % y) * (y - y) * (x * y * x - z)
+print(int(r))
+# Output: 0
+
+import re
+sent = "hi, how, are ! you doing"
+count = 0
+list1 = filter(None, re.split("[,!]+", sent))
+for i in list1:
+    count += 1
+print(count)
+# Output: 4
+
+print(2**0, 0**0, 0**1, 2**1)
+# Output: 1 1 0 2
+
+a = [1]
+b = [1]
+print(a is b)
+# Output: False
+
 x = 25 % 5
 y = 4**2 // 5
 print((x + y)**2)
