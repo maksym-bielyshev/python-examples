@@ -1,3 +1,7 @@
+list = range(5)
+print(type(list))
+# Output: <class 'range'>
+
 s = []
 for i in s:
     s.append(0)
