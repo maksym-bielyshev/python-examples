@@ -1,3 +1,6 @@
+print(True, True, True == (True, True, True))
+# Output: True True False
+
 list = range(5)
 print(type(list))
 # Output: <class 'range'>
