@@ -1,3 +1,29 @@
+a = [1, 2, 3, 4, 5]
+s = 0
+for i in a[:3]:
+    for j in a[3:]:
+        s += 1
+print(s)
+# Output: 6
+
+y = [x for x in range(10) if x // 3 == 2]
+print(sum(y))
+# Output: 21
+
+print(False == 0, False == None, None or False, None == 0)
+# Output: True False False False
+
+x = str(212.33)
+print(x[1])
+# Output: 1
+
+
+def func(x):
+    x = 1
+func(a)
+print(a)
+# Output: 0
+
 x = []
 
 
@@ -162,6 +188,7 @@ print(type(list))
 # Output: <class 'range'>
 
 s = []
+a = 0
 for i in s:
     s.append(0)
 print(len(s))
