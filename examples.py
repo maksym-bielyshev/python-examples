@@ -1,3 +1,22 @@
+def fun():
+    for x in range(10):
+        yield(x)
+x = fun()
+for a in range(5):
+    next(x)
+print(next(x))
+# Output: 5
+
+x = [1, 2, 3]
+nx = [i**2 for i in x if i % 2 == 0]
+print(nx)
+# Output: [4]
+
+x = [0, [2, 4, 6], [13, 11, 9]]
+y = x[2] + x[1] * 2
+print(y[x[1][0]])
+# Output: 9
+
 a = [1, 2, 3, 4, 5]
 s = 0
 for i in a[:3]:
