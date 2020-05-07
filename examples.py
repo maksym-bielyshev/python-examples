@@ -1,3 +1,33 @@
+str = 'sololearn' * 2
+s = map(len, str.split())
+print(sum(s))
+# Output: 18
+
+a = 3
+b = 5
+c = 6
+print((a + c) - a * b + b % a)
+# Output: -4
+
+a = 0
+while a <= 10:
+    a = a + 2
+    if (a % 4 == 0):
+        print(a, end=' ')
+# Output: 4 8 12
+
+arr = ([4, 1], [3, 6])
+fa = lambda x, y = 0: x + y
+for n in arr:
+    print(fa(*n), end='')
+# Output: 59
+
+x = (0, 1, 2)
+[a, b, c] = x
+print(a + b + c)
+# Output: 3
+
+
 def fun():
     for x in range(10):
         yield(x)
