@@ -1,3 +1,86 @@
+data = {-1, 1, 2}
+
+
+def analyze(data):
+    myData = data or '0'
+    ans = [int(d) for d in myData]
+    ans.sort(key=lambda x: (abs(x), -x))
+    print(ans[0])
+analyze(data)
+# Output: 1
+
+d = {x: x**2 for x in range(1, 10, 3)}
+print(d[7])
+# Output: 49
+
+a = []
+a.append(a)
+print(a)
+# Output: [[...]]
+
+s = 'think'
+s = ''.join(sorted(list(s)[:4]))
+print(s)
+# Output: hint
+
+a = [0, 1, 2, 3]
+for a[-1] in a:
+    print(a[-1], end=' ')
+# Output: 0 1 2 2
+
+col = []
+sum = 0
+for a in range(10):
+    col.append(sum)
+    sum += a
+print(col[5])
+# Output: 10
+
+print('hello' == "hello")
+# Output: True
+
+print(False and False or True)
+# Output: True
+
+print((True or False) and False)
+# Output: False
+
+print(True or False and False)
+# Output: True
+
+A = [1, 2, 3, 4, 5, 6, 7]
+G = iter(A)
+next(G)
+for num in G:
+    print(num, end=' ')
+    next(G)
+    next(G)
+# Output: 2 5
+
+
+class Class:
+    n = 3
+
+    def __init__(self, n):
+        n = n
+a = Class(5)
+print(a.n)
+# Output: 3
+
+a = [2, 1, 2, 4]
+a[1:].remove(2)
+print(sum(a))
+# Output: 9
+
+
+def f(n):
+    if n == 1:
+        return '0'
+    else:
+        return n * f(n - 1)
+print(int(f(5) == 120))
+# Output: 0
+
 str = 'sololearn' * 2
 s = map(len, str.split())
 print(sum(s))
