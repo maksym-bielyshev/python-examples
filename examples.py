@@ -1,3 +1,39 @@
+a = [1, 2, 3, 4, 5]
+for n in a:
+    a.remove(n)
+print(a)
+# Output: [2, 4]
+
+numbers = list(range(5, 20, 2))
+value = (numbers[0]) + (numbers[5])
+print(value)
+# Output: 20
+
+
+def count_to_5():
+    for i in range(1, 6):
+        yield(i)
+c = count_to_5()
+n = 0
+for i in c:
+    n += 1
+for i in c:
+    n -= 1
+print(n)
+# Output: 5
+
+my_dict = {"Bill ": "Gates", "Steve": "Jobs"}
+L = []
+for i, j in my_dict.items():
+    L.append(i)
+    L.append(j)
+print(len(L))
+# Output: 4
+
+x, y, z = 2, 3, 1
+print('x:{0},y:{1},z:{2}'.format(z, x, y))
+# Output: x:1,y:2,z:3
+
 data = {-1, 1, 2}
 
 
