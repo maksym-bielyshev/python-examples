@@ -1,3 +1,36 @@
+def f(values, arr=[]):
+    for i in values:
+        if i % 2 == 0:
+            arr.append(i)
+    return len(arr)
+print(f(range(4)) + f(range(5)))
+# Output: 7
+
+
+def my_func(x, y, z):
+    x = y - z
+    z = y % x
+    y = x + y
+    n = x + y**z
+    print(n)
+my_func(9, 4, 2)
+# Output: 3
+
+a = [2, 3, 1, 0]
+b = [3, 1, 0, 2]
+c = []
+for i in a:
+    if i == b[i]:
+        c.append(i)
+    else:
+        continue
+print(len(c))
+# Output: 1
+
+r = ((3 + 3 * 9) // 10 - 4) * 5 + 5
+print(r / 1)
+# Output: 0.0
+
 a = [1, 2, 3, 4, 5]
 for n in a:
     a.remove(n)
