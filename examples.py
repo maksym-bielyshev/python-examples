@@ -1,3 +1,20 @@
+class A:
+    x = 1
+
+    def __add__(self, obj):
+        if isinstance(obj, A):
+            return self.x + obj.x
+        return "False"
+
+
+class B(A):
+    x = 2
+a = A()
+b = B()
+print(a + b)
+# Output: 3
+
+
 def f(values, arr=[]):
     for i in values:
         if i % 2 == 0:
