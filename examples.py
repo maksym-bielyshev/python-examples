@@ -1,3 +1,28 @@
+a = [0, 1, 2, 3]
+for a[-1] in a:
+    print(a[-1], end=' ')
+
+
+class Parent(object):
+    x = 1
+# Output: 0 1 2 2
+
+
+class Child1 (Parent):
+    pass
+
+
+class Child2(Parent):
+    pass
+
+Child1.x = 2
+Parent.x = 3
+print(Parent.x)
+print(Child1.x)
+print(Child2.x)
+# Output: 3 2 3
+
+
 class A:
     x = 1
 
