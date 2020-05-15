@@ -1,11 +1,11 @@
 a = [0, 1, 2, 3]
 for a[-1] in a:
     print(a[-1], end=' ')
+# Output: 0 1 2 2
 
 
 class Parent(object):
     x = 1
-# Output: 0 1 2 2
 
 
 class Child1 (Parent):
