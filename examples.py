@@ -1,3 +1,28 @@
+a = [0]
+
+
+def pick_last(deck=a):
+    val = deck[-1]
+    deck.append(val + 1)
+    return val
+pick_last()
+print(pick_last())
+# Output: 1
+
+
+def func(a, L=[]):
+    L.append(a)
+    return L
+print(func(1), func(3))
+# Output: [1, 3] [1, 3]
+
+import bisect
+students = [(5, "Ben"), (20, "Sam")]
+bisect.insort(students, (25, "Bob"))
+bisect.insort(students, (1, "Tom"))
+print(students[0][1])
+# Output: Tom
+
 a = [0, 1, 2, 3]
 for a[-1] in a:
     print(a[-1], end=' ')
