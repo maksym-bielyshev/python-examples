@@ -1,3 +1,45 @@
+A = [[]] * 3
+A[0].append(3)
+print(A)
+# Output: [[3], [3], [3]]
+
+
+class Myclass:
+
+    def __init__(self, val):
+        self.__n = val
+obj = Myclass(0)
+obj.__n = 1
+print(obj._Myclass__n)
+# Output: 0
+
+
+def make(a):
+    return a + a
+
+
+def func(a):
+    b = '*' * 10
+    if make(a) == b:
+        print("True")
+    else:
+        print("False")
+a = '*' * 5
+func(a)
+# Output: True
+
+x = (0, 1, 2)
+[a, b, c] = x
+print(a + b + c)
+# Output: 4
+
+import numpy
+arr = numpy.arra([[1, 2, 3], [4, 5, 6]])
+arr = arr.reshape(3, 2)
+print(arr[1][1])
+# Output: 4
+
+
 def func(n):
     y = '*'.join(str(x) for x in range(1, n, 2))
     return eval(y)
