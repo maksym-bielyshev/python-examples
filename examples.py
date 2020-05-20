@@ -1,3 +1,6 @@
+print(5|3)
+# Output: 7
+
 A = [[]] * 3
 A[0].append(3)
 print(A)
