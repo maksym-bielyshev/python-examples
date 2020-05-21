@@ -1,4 +1,11 @@
-print(5|3)
+lst = [34, 67, 34]
+if lst.sort() == sorted(lst):
+    print('true')
+else:
+    print('false')
+# Output: false
+
+print(5 | 3)
 # Output: 7
 
 A = [[]] * 3
