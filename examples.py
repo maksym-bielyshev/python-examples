@@ -1,3 +1,14 @@
+x = True
+y = False
+z = False
+if not x or y:
+    print(1)
+elif not x or not y and z:
+    print(2)
+else:
+    print(3)
+# Output: 3
+
 lst = [34, 67, 34]
 if lst.sort() == sorted(lst):
     print('true')
