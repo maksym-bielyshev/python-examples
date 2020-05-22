@@ -1,3 +1,35 @@
+a = [0, 1, 4, 9, 16, 25]
+for v in a:
+    if not a.index(v) ** 2 != v:
+        print("True")
+        break
+    else:
+        print("False")
+        break
+# Output: True
+
+
+class A:
+    x = [1, 2, 3]
+
+
+class B:
+    y = A()
+    z = 2
+obj = B()
+if obj.y.x.index(obj.z) == 1:
+    print(True)
+else:
+    print(False)
+# Output: True
+
+print(int('0011', 2))
+# Output: 3
+
+s = "Hello"
+print(*s)
+# Output: H e l l o
+
 x = True
 y = False
 z = False
