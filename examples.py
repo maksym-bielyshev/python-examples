@@ -1,3 +1,26 @@
+def f(n=9):
+    print(n)
+f(5)
+# >>> 5
+
+
+class Myclass:
+
+    def __init__(self, n=1):
+        self.__n = n
+
+    def val_n(self):
+        return self.__n
+obj = Myclass(2)
+obj.__n = 3
+print(obj.val_n())
+# >>> 2
+
+arr = [4, 3, 1, 2]
+arr[0], arr[arr[0] - 1] = arr[arr[0] - 1], arr[0]
+print(arr)
+# >>> [2, 4, 1, 2]
+
 a = [0, 1, 4, 9, 16, 25]
 for v in a:
     if not a.index(v) ** 2 != v:
