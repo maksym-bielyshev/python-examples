@@ -1,3 +1,8 @@
+t = (n for n in range(5))
+print(type(t))
+# >>> <class 'generator'>
+
+
 def f(n=9):
     print(n)
 f(5)
