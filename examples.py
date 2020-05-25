@@ -1,3 +1,18 @@
+class A:
+
+    @staticmethod
+    def sample(self):
+        print('static method')
+
+    @classmethod
+    def sample(self):
+        print('class method')
+A.sample()
+# >>> 'class method'
+
+print('python'[::-1].endswith('p'))
+# >>> True
+
 t = (n for n in range(5))
 print(type(t))
 # >>> <class 'generator'>
