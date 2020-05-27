@@ -1,3 +1,8 @@
+arr = [2, 1, "a", 3]
+arr.sort()
+print(arr)
+# >>> TypeError: '<' not supported between instances of 'str' and 'int'
+
 from functools import reduce
 numbers = [1, 2, 3, 4]
 sum = reduce(lambda x, y: x + y, numbers)
