@@ -1,3 +1,32 @@
+def func(item):
+    return len(item)
+_list = ['Java', 'Python', 'C', 'R']
+print(max(_list, key=func))
+# >>> Python
+
+
+def multiplying(x):
+    j = range(1, x + 1)
+    return eval('*'.join([str(i) for i in j]))
+print(multiplying(3))
+# >>> 6
+
+arr = [1, 2, 3, 4, 3, 2, 1]
+a = list(map(lambda x: x % 2 == 0, arr))
+if a[3] == True:
+    print('c')
+else:
+    print('d')
+# >>> c
+
+
+def foo(x):
+    x = ['def', 'abc']
+    return id(x)
+q = ['def', 'abc']
+print(id(q) == foo(q))
+# >>> False
+
 arr = [2, 1, "a", 3]
 arr.sort()
 print(arr)
