@@ -1,3 +1,18 @@
+seq = 2
+list_1 = [1, 1, 4]
+for i in range(1, len(list_1)):
+    h = list_1[i] - list_1[i - 1]
+    if h != seq:
+        list_1[i] = list_1[i - 1] + seq
+print(list_1)
+# >>> [1, 3, 5]
+
+x = [0, 1, 2, 3, 6]
+x.append(x[:])
+print(len(x))
+# >>> 6
+
+
 def func(item):
     return len(item)
 _list = ['Java', 'Python', 'C', 'R']
