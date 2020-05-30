@@ -1,3 +1,8 @@
+a = {1, 2, 3}
+a.add(0)
+print(len(a))
+# >>> 4
+
 seq = 2
 list_1 = [1, 1, 4]
 for i in range(1, len(list_1)):
