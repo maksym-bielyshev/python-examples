@@ -1,3 +1,16 @@
+def f(n, v):
+    n = len(v)
+    v.append(n)
+n = 0
+v = [8, 0, 4, 6]
+f(n, v)
+print(n, sum(v))
+# >>> 0 22
+
+name, age = "Jane", 22
+print("Her name is {}. She is {}.".format(name, age))
+# >>> Her name is Jane. She is 22.
+
 a = {1, 2, 3}
 a.add(0)
 print(len(a))
