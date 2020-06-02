@@ -1,3 +1,10 @@
+a = [x - 2 for x in range(-1, 5)]
+val = lambda x: x + 3
+b = [val(x) for x in a]
+print(abs(max(a) - max(b)))
+# >>> 3
+
+
 def f(n, v):
     n = len(v)
     v.append(n)
