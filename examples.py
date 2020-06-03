@@ -1,3 +1,9 @@
+mixed = ".s:;olq[olw::e/a#@rn"
+for char in ".@#:;/[qw":
+    mixed = mixed.replace(char, '')
+print(mixed)
+# >>> sololearn
+
 a = [x - 2 for x in range(-1, 5)]
 val = lambda x: x + 3
 b = [val(x) for x in a]
