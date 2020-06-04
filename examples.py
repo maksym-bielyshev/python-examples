@@ -1,3 +1,9 @@
+if 1 & 2:
+    print(1)
+else:
+    print(2)
+# >>> 2
+
 mixed = ".s:;olq[olw::e/a#@rn"
 for char in ".@#:;/[qw":
     mixed = mixed.replace(char, '')
