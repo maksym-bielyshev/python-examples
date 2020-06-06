@@ -1,3 +1,34 @@
+num = 5
+sum = 0
+while True:
+    if num >= 1:
+        sum += num
+        num -= 1
+    else:
+        break
+print(sum)
+# >>> 15
+
+x = [[0], [1]]
+print(len('a'.join(list(map(str, x)))))
+# >>> 7
+
+a = [1, 2]
+b = {1, 2}
+c = (2, 1)
+print(a == list(b))
+print(tuple(b) == c)
+print(b == set(c))
+print(tuple(a) == c)
+# >>> True False True False
+
+dict = {1: 15, 5: 10, 4: 26}
+sum = 0
+for value in dict:
+    sum = sum + value
+print(sum)
+# >>> 10
+
 if 1 & 2:
     print(1)
 else:
