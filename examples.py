@@ -1,3 +1,24 @@
+*x, y = [1, 2], [3, 4], [5, 6]
+print(list(zip(*x + [y]))[1][1])
+# >>> 4
+
+
+def function(x):
+    if x == 1:
+        return x
+    else:
+        x -= 1
+        function(x)
+x = 2
+print(function(x), x)
+# >>> None 2
+
+my_list = [3, 5, 6, 7, 8, 1]
+for i in range(3):
+    my_list.pop(i)
+print(my_list)
+# >>> [5, 7, 1]
+
 num = 5
 sum = 0
 while True:
