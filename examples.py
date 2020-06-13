@@ -1,5 +1,20 @@
 
 
+List = []
+List.append(1)
+List.extend(2)
+print(List)
+# >>> TypeError: 'int' object is not iterable
+
+def f(x=0):
+    y=x
+    def g(y):
+        print(y)
+    print(x)
+    return g
+f()(1)
+# >>> 0 1
+
 a = [3, 4, 2]
 b = sorted(a)
 b.insert(0,1)
