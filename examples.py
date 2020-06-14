@@ -1,13 +1,41 @@
 
 
+def f(m: str, v: str) -> str:
+    return f.__annotations__
+print(f('a', 'b')['m'])
+# >>> <class 'str'>
+
+
+def fac(c):
+    if c > 0:
+        return c * fac(c - 1)
+    else:
+        return 1
+print(fac(4))
+# >>> 24
+
+x = 2
+y = "2"
+print(not x == y and y == x)
+# >>> False
+
+
+class A(int):
+    pass
+
+print(A(9) + A(9))
+# >>> 18
+
 List = []
 List.append(1)
 List.extend(2)
 print(List)
 # >>> TypeError: 'int' object is not iterable
 
+
 def f(x=0):
-    y=x
+    y = x
+
     def g(y):
         print(y)
     print(x)
@@ -17,32 +45,33 @@ f()(1)
 
 a = [3, 4, 2]
 b = sorted(a)
-b.insert(0,1)
+b.insert(0, 1)
 print(a[0])
 # >>> 3
 
-g = 64//3
+g = 64 // 3
 f = type(g) == int
 h = ['float', 'str', 'int']
 print(f'The type of g is {h[-f]}')
 # >>> The type of g is int
 
-def count(n = 0):
+
+def count(n=0):
     while True:
         yield (yield n)
         n += 1
 a = count()
 next(a)
-print(a.send(5),end="")
+print(a.send(5), end="")
 print(a.send("a"))
 # >>> 51
 
-list1 = [1,2]
+list1 = [1, 2]
 list2 = list1
 list3 = list2[:]
 a = list2 is list1
 b = list3 is list1
-print(a,b)
+print(a, b)
 # >>> True False
 
 a = 257
