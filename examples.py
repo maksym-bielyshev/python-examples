@@ -1,5 +1,15 @@
 
 
+def f(q, mylist=[]):
+    mylist = mylist + q
+    return mylist
+a = [1]
+print(f(a))
+a = [2]
+print(f(a))
+# >>> [1] [2]
+
+
 def f(m: str, v: str) -> str:
     return f.__annotations__
 print(f('a', 'b')['m'])
