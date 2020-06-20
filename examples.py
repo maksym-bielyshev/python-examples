@@ -1,5 +1,26 @@
 
 
+list = [0, 1, 2, 3, 4, 5]
+print(list[:1:-1][1])
+# 4
+
+class FirstClass:
+    n = 4
+    def __init__(self, n):
+        n = n//4
+a = FirstClass(8)
+print(a.n)
+# 4
+
+a = [1,2,3,5,8,13]
+print(a[2:2])
+# []
+
+import numpy as np
+arr = np.zeros((2,4))
+print(arr.size)
+# >>> 8
+
 def f(q, mylist=[]):
     mylist = mylist + q
     return mylist
