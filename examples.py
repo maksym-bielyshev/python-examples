@@ -1,5 +1,14 @@
 
 
+import re
+pattern = r"(?P<le>Solo)((le)arn)"
+match = re.match(pattern, "Sololearn")
+if match:
+    print(match.group("le"))
+else:
+    print("Sololearn")
+# Solo
+
 list = [0, 1, 2, 3, 4, 5]
 print(list[:1:-1][1])
 # 4
