@@ -1,5 +1,12 @@
 
 
+x = 10
+def addTwo(x):
+    return x + 2
+n = addTwo(4)
+print(x)
+# 10
+
 import re
 pattern = r"(?P<le>Solo)((le)arn)"
 match = re.match(pattern, "Sololearn")
