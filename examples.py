@@ -1,5 +1,34 @@
 
 
+def guess(list1):
+    list2 = list1
+    list2.append(4)
+    list1 = [5, 6, 7]
+
+
+list1 = [1, 2, 3]
+guess(list1)
+print(sum(list1))
+# 10
+
+class Myclass:
+    def __init__(self):
+        self.n = 0
+a = Myclass()
+b = a
+b.n = 1
+print(a.n)
+# 1
+
+a = [1,2]
+a.append(a)
+print(a != a[2][2][2])
+# False
+
+f = [1, 2, 4, 6, 8]
+print(str(f[2] -f[4] % 3) * 3)
+# 222
+
 a = 148
 b = a * a + a
 print(b % a < b / a)
