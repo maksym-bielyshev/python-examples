@@ -1,5 +1,17 @@
 
 
+A = [1,2]
+B = [3,4]
+C = A.extend(B)
+print(C[3])
+# TypeError: 'NoneType' object is not subscriptable
+
+a = 1
+b = a + 1
+a, b = 2, a + 1
+print(a, b)
+# 2 2
+
 def guess(list1):
     list2 = list1
     list2.append(4)
