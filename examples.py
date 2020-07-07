@@ -1,5 +1,8 @@
 
 
+print(abs(3 + 4j))
+# 5.0
+
 a = [1, 2, ":", 3]
 del a[:]
 print(a)
