@@ -1,5 +1,10 @@
 
 
+x = [2, 3, 4]
+y = x
+print(y is x)
+# True
+
 print(abs(3 + 4j))
 # 5.0
 
