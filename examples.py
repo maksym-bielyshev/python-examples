@@ -1,5 +1,20 @@
 
 
+func = lambda x: x%3 == 0
+l = filter(func, range(10))
+l = list(l)
+print(len(l)+sum(l)+max(l))
+# 31
+
+a = [0, 1, 2, 3, 4, 5, 6]
+b = a[::-3]
+b.sort()
+if (b == a[::3]):
+    print(1)
+else:
+    print(0)
+# 1
+
 x = [2, 3, 4]
 y = x
 print(y is x)
