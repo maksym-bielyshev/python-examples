@@ -1,5 +1,106 @@
 
 
+def bar():
+    x = 1
+    def foo():
+        print('x' in globals(), 'x' in locals())
+    foo()
+bar()
+# False False
+
+nums = range(5)
+a = 1
+for i in nums[1:]:
+    a *= i
+print(a)
+# 24
+
+a = [1,2,3]
+x,y,z = a
+print(x*z+4%3)
+# 4
+
+d = {'s':'o', 'l':'o', 'l': 'e', 'a': 'r', 'n':'!'}
+print(len(d))
+# 4
+
+a = [1,2,3]
+b = a
+a = a+[4]
+print(len(b))
+# 3
+
+a = 6
+b = 4
+if((b%a)==1):
+    print(a)
+else:
+    print(b)
+# 4
+
+arr = [0,1,1,0]
+for val in arr:
+    if val == 0:
+        arr[val] = 1
+print(arr)
+# [1, 1, 1, 0]
+
+a = 1 % 213
+b = 1 % 215
+print(a == abs(b))
+# True
+
+import numpy as np
+a = np.array([[1,2], [3,4], [5,6]])
+print(a[:,1])
+# [2 4 6]
+
+try:
+    s = ['a', 'c']
+    n = [0, 2]
+    s[1:1] = 'b'
+    n[1:1] = 1
+except:
+    pass
+print(s[1], n[1])
+# b 2
+
+def myAdd(x = 2, y = 4, *args):
+    while (x < y):
+        for ar in range(len(args)):
+            return (x + y + args[ar + 2])
+            break
+print(myAdd(3,4,5,6,9))
+# 16
+
+class MyClass:
+    def __init__(self, n):
+        self.x = n
+    def set_y(self):
+        self.y = self.x * 2
+obj = MyClass(2)
+print(obj.x + obj.y)
+# AttributeError: 'MyClass' object has no attribute 'y'
+
+import numpy as np
+ar = np.ones((3,2))
+print(ar.ndim)
+# 2
+
+def factorial(x):
+    w = 1
+    for i in range(1, x + 1):
+        w = w * i
+    return w
+print(factorial(5))
+# 120
+
+a = [8, 0, 4, 6, 1]
+m = len(a) // 2
+b = a[:m] + a[m:]
+print(a == b)
+# True
+
 a = "abcd"
 b = "abc"
 func = (lambda s:s[1:]) or (lambda s:s[:-1])
