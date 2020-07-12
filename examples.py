@@ -1,5 +1,17 @@
 
 
+a = "abcd"
+b = "abc"
+func = (lambda s:s[1:]) or (lambda s:s[:-1])
+print((func(b)))
+# bc
+
+if 1 & 0:
+    print('a')
+else:
+    print('b')
+# b
+
 func = lambda x: x%3 == 0
 l = filter(func, range(10))
 l = list(l)
