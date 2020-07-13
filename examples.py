@@ -1,5 +1,30 @@
 
 
+def square_of_x(x,y):
+    return x*2
+print(square_of_x(y=2, x=3))
+# 6
+
+a={0:1, 1:2}
+_sum = 0
+for b in a: _sum += b
+print(_sum + b)
+# 2
+
+b = 3
+a = 1
+for i in range(b):
+    a = a + a * i
+print(a)
+# 6
+
+def test():
+    print("x")
+    return test
+
+test()()()()
+# xxxx
+
 def bar():
     x = 1
     def foo():
