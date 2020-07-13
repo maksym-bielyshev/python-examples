@@ -1,6 +1,5 @@
 
 
-
 def square_of_x(x,y):
     return x*2
 print(square_of_x(y=2, x=3))
