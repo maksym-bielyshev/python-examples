@@ -1,5 +1,22 @@
 
 
+a = "eggs"
+b = a
+a = "spam"
+print(b)
+# eggs
+
+def func1(x):
+    return x + 1
+def func2(x, y = 2):
+    return x + y
+arr = [func1, func2]
+n = 0
+for f in arr:
+    n += f(n)
+print(n)
+# 4
+
 lst = [].append(5)
 print(lst)
 # None
