@@ -1,5 +1,10 @@
 
 
+a = (8, -1, 3)
+a.sort()
+print(a[1])
+# AttributeError: 'tuple' object has no attribute 'sort'
+
 def func(x):
     x[0] = ['def']
     x[1] = ['abc']
