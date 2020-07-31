@@ -1,5 +1,22 @@
 
 
+import math
+list = range(5)
+def root(x):
+    return math.sqrt(x)
+for y in list:
+    if root(y) % 2 == 0:
+        print(y)
+# 0 4
+
+def outer_func(msg):
+    def inner_func():
+        print(f"message is {msg}")
+    return inner_func
+var = outer_func("hello world!")
+var()
+# message is hello world!
+
 a = (8, -1, 3)
 a.sort()
 print(a[1])
