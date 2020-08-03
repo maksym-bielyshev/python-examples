@@ -1,5 +1,21 @@
 
 
+foo = print()
+if foo == None:
+    print(2)
+else:
+    print(4)
+# 2
+
+print(1+2*3-4**(4-2))
+# -9
+
+s = {10, 20, 30}
+t = {3, 4}
+u = s.union_update(t)
+print(u)
+# AttributeError: 'set' object has no attribute 'union_update'
+
 import math
 list = range(5)
 def root(x):
