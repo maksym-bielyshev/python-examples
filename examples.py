@@ -1,5 +1,17 @@
 
 
+longlist = list(range(10))
+longlist[2] = 3
+shortlist = longlist[2:4]
+print(sum(shortlist))
+# 6
+
+arr = {0,1,2,3,4};
+x = arr[len(arr)-1];
+y = x%4;
+print(y);
+# TypeError: 'set' object does not support indexing
+
 foo = print()
 if foo == None:
     print(2)
