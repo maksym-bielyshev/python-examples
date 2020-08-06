@@ -1,5 +1,25 @@
 
 
+def main():
+    n = [1, 2, 3, 4, 5, 6]
+    n.append(7,8)
+    n.insert(3,9)
+    n.remove(8)
+    print(n)
+if __name__ == "__main__":
+    main()
+# TypeError: append() takes exactly one argument (2 given)
+
+a = ()
+def func(n):
+    k = ()
+    k = k + n
+    return k
+for i in range(0, 5, 2):
+    a += func((i, i + 1))
+print(len(a))
+# 6
+
 longlist = list(range(10))
 longlist[2] = 3
 shortlist = longlist[2:4]
