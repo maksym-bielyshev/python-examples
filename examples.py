@@ -1,4 +1,15 @@
+arr = [1, 2, 3, None, (), [],]
+print(len(arr))
+# 6
 
+a = [1,2]
+a.append(a)
+print(a != a[2][2][2])
+# False
+
+r = [i**2 for i in range(4) if i**2%2==0]
+print(r[0]+r[1])
+# 4
 
 def main():
     n = [1, 2, 3, 4, 5, 6]
