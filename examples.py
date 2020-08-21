@@ -93,7 +93,7 @@ def func(x):
     x[1] = ['abc']
     return id(x)
 q = ['abc', 'def']
-print(id(q)==func(q))
+print(id(q) == func(q))
 # True
 
 a = "eggs"
