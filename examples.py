@@ -1,3 +1,18 @@
+def capitalize_odd_indexes(string):
+    capitalization = []
+    i = 0
+    for char in string:
+        if i%2 == 0:
+            capitalization.append(char.capitalize())
+        else:
+            capitalization.append(char.lower())
+        i += 1
+    join_list = "".join(capitalization)
+    return join_list
+
+print(capitalize_odd_indexes("abcdef"))
+# AbCdEf
+
 count = 0
 for i in range(5):
     for j in range(i):
