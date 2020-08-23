@@ -1,3 +1,21 @@
+class MyClass:
+    pass
+obj = MyClass()
+obj.n = 1000
+print(obj.n)
+# 1000
+
+my_list = ["car", "plane", "train", "bike", "rocket"]
+new_list = sorted(my_list, key = lambda x:x[-2])
+print(new_list)
+# ['car', 'rocket', 'train', 'bike', 'plane']
+
+a = 5,
+b = 6, 7
+c = a + b
+print(c)
+# (5, 6, 7)
+
 def capitalize_odd_indexes(string):
     capitalization = []
     i = 0
