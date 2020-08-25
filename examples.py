@@ -1,3 +1,12 @@
+
+
+a = [1, [2, 3]]
+b = [1, 2, 3]
+c = a[:]
+d = b[:]
+print(c is a, d is b)
+# False False
+
 class MyClass:
     pass
 obj = MyClass()
