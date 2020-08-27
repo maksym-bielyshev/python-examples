@@ -1,5 +1,14 @@
 
 
+from itertools import product as p
+L = lambda  a, b: not(not a or b)
+result = [x for x in p(*[[0,1]] * 2) if L(*x)]
+print(result)
+# [1,0]
+
+print(all([]), any([]), all([0]), any([1]))
+# True False False True
+
 a = [1, [2, 3]]
 b = [1, 2, 3]
 c = a[:]
