@@ -1,5 +1,16 @@
 
 
+print(
+    'x' in set('xray'),
+    'xray' in ['xray', 'doctor', 'nurse']
+)
+# True True
+
+a = 6
+a, b = 0, a + 1
+print(a*"str")
+# Empty string
+
 from itertools import product as p
 L = lambda  a, b: not(not a or b)
 result = [x for x in p(*[[0,1]] * 2) if L(*x)]
