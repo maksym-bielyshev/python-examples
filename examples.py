@@ -1,5 +1,9 @@
 
 
+x = 4
+print((x*x*x*x)**(1/x))
+# 4.0
+
 print(
     'x' in set('xray'),
     'xray' in ['xray', 'doctor', 'nurse']
