@@ -1,5 +1,80 @@
 
 
+for x in range(10):
+    if x % 2 == 0:
+        continue
+    print(x, end='')
+# 13579
+
+class A:
+    __var = 5
+
+    def pr(self):
+        print(self.__var)
+
+
+class B(A):
+    __var = 4
+
+
+B().pr()
+# 5
+
+def func1(x):
+    return x + 1
+
+
+def func2(x, y=2):
+    return x + y
+
+
+arr = [func1, func2]
+n = 0
+for f in arr:
+    n += f(n)
+print(n)
+# 4
+
+i = [1, 2, 3]
+s = '{2}{1}{0}'.format(i[0], i[2], i[1])
+print(s)
+# 231
+
+a = [(1, 0), [2, 3, 4], {1: 'a', 4: 'b'}]
+lst = []
+for n in a:
+    lst.extend(n)
+print(len(lst))
+# 7
+
+list1 = ["carrot", "banana", "mango"]
+list2 = del list[1]
+print(list1)
+# SyntaxError
+
+lst = [-2, 0, 2, 4]
+c = sum(i*2 for i in lst)
+print(c)
+# 8
+
+a, b, *c = [1, 2, 3, 7]
+print(*c)
+# 3 7
+
+a = list(range(2,7))
+b = a[1]
+c = a[3]
+b, c = c, b
+d = [b, c]
+print(d[1])
+# 3
+
+def func():
+    pass
+other = func
+print(other.__name__)
+# func
+
 x = 4
 print((x*x*x*x)**(1/x))
 # 4.0
