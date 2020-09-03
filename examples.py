@@ -1,5 +1,10 @@
 
 
+a = list(range(2, 10, 2))
+b = list(range(3, 10, 3))
+print(set(b) - set(a))
+# {3, 9}
+
 for x in range(10):
     if x % 2 == 0:
         continue
