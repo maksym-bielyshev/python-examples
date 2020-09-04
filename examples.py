@@ -1,5 +1,19 @@
 
 
+from itertools import *
+for i in count(20, -3):
+    print(i)
+    if i < 5:
+        break
+# 2
+
+def f(r):
+    j = range(r)
+    e = eval("*".join([str(i+1) for i in j]))
+    return e
+print(f(5))
+# 120
+
 a = list(range(2, 10, 2))
 b = list(range(3, 10, 3))
 print(set(b) - set(a))
