@@ -1,5 +1,17 @@
 
 
+def f(m:str, v:str) -> int:
+    return f.__annotations__
+print(f('a', 'b')['m'])
+# <class 'str'>
+
+def function(number):
+    return (number%3==1 or number%4==2)
+a = list(range(10))
+b = list(filter(function,a))
+print(len(b))
+# 5
+
 from itertools import *
 for i in count(20, -3):
     print(i)
