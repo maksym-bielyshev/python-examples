@@ -1,5 +1,9 @@
 
 
+a, b, *c, d = 1, 2, 3
+print(c)
+
+
 def f(m:str, v:str) -> int:
     return f.__annotations__
 print(f('a', 'b')['m'])
