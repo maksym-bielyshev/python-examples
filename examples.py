@@ -1,8 +1,14 @@
 
 
+x = 67
+y = int(''.join(sorted(str(x))))
+z = int(''.join(sorted(str(x)))[::-1])
+print(z-y)
+# 9
+
 a, b, *c, d = 1, 2, 3
 print(c)
-
+# []
 
 def f(m:str, v:str) -> int:
     return f.__annotations__
