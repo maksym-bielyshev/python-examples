@@ -1,5 +1,25 @@
 
 
+for n in range(1, 5):
+    if n == 5:
+        x = y + n
+    else:
+        y = n
+print(x)
+# NameError: name 'x' is not defined
+
+y = [x if x==1 else x*2 for x in ['1','2'][0]]
+print(y)
+# 11
+
+a = [1, 2, 3]
+b = a
+a[0] = 5
+print(b[0], end = '')
+a = [6, 7, 8]
+print(b[0], end = '')
+# 55
+
 x = 67
 y = int(''.join(sorted(str(x))))
 z = int(''.join(sorted(str(x)))[::-1])
