@@ -1,5 +1,15 @@
 
 
+myList = [i for i in range(8)]
+for i in myList:
+    myList.remove(i)
+print(sum(myList))
+# 16
+
+A = {1, 2, 3, 5, 3, 2, 1}
+print(sum(((list(filter(lambda x: x % 2 == 0, A))))))
+# 2
+
 for n in range(1, 5):
     if n == 5:
         x = y + n
