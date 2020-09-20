@@ -1,5 +1,9 @@
 
 
+text = 'SoloLearn'
+print(text[:-1])
+# SoloLear
+
 myList = [i for i in range(8)]
 for i in myList:
     myList.remove(i)
