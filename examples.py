@@ -1,5 +1,15 @@
 
 
+a = (1, 2)
+b = (1, 2, 3)
+c = [a, b]
+del a, b
+if(len(c) == 0):
+    print(c)
+else:
+    print(len(c[0]) + len(c[1]))
+# 5
+
 text = 'SoloLearn'
 print(text[:-1])
 # SoloLear
