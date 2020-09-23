@@ -1,4 +1,16 @@
 
+x = True
+y = False
+z = False
+if(not x or y):
+    print('1')
+elif(not x or not y and z):
+    print('2')
+elif(not x or not y and x):
+    print('3')
+else:
+    print('4')
+# 3
 
 a = (1, 2)
 b = (1, 2, 3)
