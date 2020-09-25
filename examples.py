@@ -1,4 +1,25 @@
 
+
+n = int('10' + '0' * 5)
+for i in range(6):
+    n /=10
+print(n)
+# 1.0
+
+class Test:
+    def __init__(self, val = 0):
+        self.val = val
+    def __add__(self, othr):
+        return self.val + othr
+ob = Test(99)
+print(1+ob)
+# TypeError: unsupported operand type(s) for +: 'int' and 'Test'
+
+my_list = [([]), [()]]
+for i in my_list:
+    print(bool(i), end='')
+# False True
+
 x = True
 y = False
 z = False
