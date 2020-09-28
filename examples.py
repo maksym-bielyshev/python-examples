@@ -1,5 +1,17 @@
 
 
+arr = (1,2,3,4,3,2,1)
+a=list(map(lambda x:x%2==0,arr))
+print(len(a))
+# 7
+
+print(True ** False / True)
+# 1.0
+
+squares = [0, 1, 4, 9, 16, 25, 36]
+print(squares[1:1:-1])
+# []
+
 n = int('10' + '0' * 5)
 for i in range(6):
     n /=10
