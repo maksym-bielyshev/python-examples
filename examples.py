@@ -1,5 +1,10 @@
 
 
+from itertools import accumulate, takewhile
+nums = list(accumulate(range(8)))
+print(list(takewhile(lambda x: x <= 6, nums)))
+# [0, 1, 3, 6]
+
 arr = (1,2,3,4,3,2,1)
 a=list(map(lambda x:x%2==0,arr))
 print(len(a))
