@@ -1,5 +1,19 @@
 
 
+vals = [2,4,7]
+new = "{1}{2}{1}".format(vals[0],vals[2],vals[1])
+print(new)
+# 747
+
+x = [1,2,3]
+def func(x):
+    a = 42
+    x[1] = 42
+    x = a
+func(x)
+print(x)
+# [1, 42, 3]
+
 from itertools import accumulate, takewhile
 nums = list(accumulate(range(8)))
 print(list(takewhile(lambda x: x <= 6, nums)))
