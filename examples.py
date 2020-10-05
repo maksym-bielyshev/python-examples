@@ -1,5 +1,21 @@
 
 
+arr = [1, 4, 2]
+x = 0
+for i in arr:
+    if (i > x):
+        x += i
+    else:
+        x -= i
+print(x)
+# 3
+
+a = [3,4,2]
+b = sorted(a)
+b.insert(0,1)
+print(a[0])
+# 3
+
 list = ["(", 1, 2]
 index = 2
 list.insert(index, ",")
