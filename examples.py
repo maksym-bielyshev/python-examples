@@ -1,5 +1,17 @@
 
 
+list = ["(", 1, 2]
+index = 2
+list.insert(index, ",")
+print(*list, end =")")
+# ( 1 , 2 )
+
+a = [2,4,5]
+for i in range(1,3):
+    a[i] = a[i-1]
+    print(a[i], end='')
+# 22
+
 vals = [2,4,7]
 new = "{1}{2}{1}".format(vals[0],vals[2],vals[1])
 print(new)
