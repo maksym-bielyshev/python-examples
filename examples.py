@@ -1,5 +1,20 @@
 
 
+a = 0 and 1 or 0
+b = 0 and 0 or 1
+c = 1 or 0 and 0
+d = 0 or 1 and 0
+print(a, b, c, d, sep='')
+# 0110
+
+import copy
+a = [1, [2,3]]
+b = copy.deepcopy(a)
+a[0] = 3
+a[1][1] = 5
+print(b)
+# [1, [2,3]]
+
 arr = [1, 4, 2]
 x = 0
 for i in arr:
