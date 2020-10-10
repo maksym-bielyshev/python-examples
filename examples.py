@@ -1,5 +1,34 @@
 
 
+x = [[0]*2]*2
+x[0][0] = 1
+print(x[0][0] + x[1][0])
+# 2
+
+import numpy as np
+a = np.array([[1,2,3], [0,1,4]])
+print(a.size)
+
+a = range(6)
+r = a[3+1]*4%3
+print(r)
+# 1
+
+import numpy as np
+ar = np.ones((3,2))
+print(ar.ndim)
+# 2
+
+def foo(a, *b):
+    return a * b
+c = foo(1, 2, 3,)
+print(c)
+# (2, 3)
+
+my_list = [0, 1, 5, 4]
+print(my_list[:-2])
+# [0, 1]
+
 a = 0 and 1 or 0
 b = 0 and 0 or 1
 c = 1 or 0 and 0
