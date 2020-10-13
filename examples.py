@@ -1,5 +1,51 @@
 
 
+gun = lambda x: x * x
+data = 1
+for i in range(1, 3):
+    data += gun(i)
+print(gun(data))
+# 36
+
+x, y = 4, 6
+a = "{x}".format(x = y), + 2,"{y}".format(y = 10)
+print(a)
+# ('6', 2, '10')
+
+print("p" is "p", [] is [])
+# True False
+
+class Myclass:
+    def __init__(self):
+        self.n = id(self)
+obj = Myclass()
+print(id(obj) == obj.n)
+# True
+
+a = 0
+for b in range(10):
+    if b % 2 == 0:
+        a += int(b/2)
+print(a)
+# 10
+
+name = "Mark Foxx"
+names = name.split(" ")
+if names[1].endswith("foxx"):
+    print(1)
+else:
+    print(0)
+# 0
+
+def rec(n):
+    n %= 5
+    if n <= 1:
+        return n
+    else:
+        return rec(n-1) + rec(n-2)
+print(rec(9))
+
+
 x = [[0]*2]*2
 x[0][0] = 1
 print(x[0][0] + x[1][0])
