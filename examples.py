@@ -15,6 +15,9 @@ print(a)
 print("p" is "p", [] is [])
 # True False
 
+print(float("5")+int("2")*int(2==3))
+# 5.0
+
 class Myclass:
     def __init__(self):
         self.n = id(self)
