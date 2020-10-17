@@ -1,5 +1,11 @@
 
 
+a = {'A', 'B', 'C', 'D'}
+b = {'B', 'D', 'E'}
+c = {'E', 'B', 'A'}
+print((b^c)-a)
+# set()
+
 gun = lambda x: x * x
 data = 1
 for i in range(1, 3):
@@ -338,6 +344,15 @@ b, c = c, b
 d = [b, c]
 print(d[1])
 # 3
+
+thelist = [(1,2,3), (4,5,6), (7,8,9)]
+sumx = 0
+
+for x,y,z in thelist:
+    sumx += y
+
+print(sumx)
+# 15
 
 def func():
     pass
