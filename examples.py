@@ -1,5 +1,17 @@
 
 
+s = 'sololearn'
+try:
+    print(s.find('s'))
+    print(s.find('l'))
+    print(s.find('i'))
+    print(s.find('p'))
+except ValueError:
+    pass
+except IndexError:
+    print(len(s))
+# 0 2 -1 -1
+
 a = {'A', 'B', 'C', 'D'}
 b = {'B', 'D', 'E'}
 c = {'E', 'B', 'A'}
