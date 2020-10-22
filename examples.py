@@ -913,6 +913,9 @@ b = 257
 print(a == b and a is b)
 # >>> True
 
+print(range(10))
+# range(0, 10)
+
 print(int(2 / 2 * 2 - 2 + 2 % 2))
 # >>> 0
 
@@ -920,6 +923,15 @@ print(int(2 / 2 * 2 - 2 + 2 % 2))
 print(list(zip(*x + [y]))[1][1])
 # >>> 4
 
+
+*x, y = [-4, 2], [17, 4], [15, 2]
+print(list(zip(*x + [y]))[0][1])
+# 17
+
+L = [1,2,3,4,5,6,7,8,9,0]
+L.sort(key=lambda x:x%3, reverse=True)
+print(L)
+# [2, 5, 8, 1, 4, 7, 3, 6, 9, 0]
 
 def function(x):
     if x == 1:
@@ -936,6 +948,12 @@ for i in range(3):
     my_list.pop(i)
 print(my_list)
 # >>> [5, 7, 1]
+
+def my_code():
+    return 0
+    print(4)
+print(my_code())
+# 0
 
 num = 5
 sum = 0
@@ -1342,6 +1360,11 @@ x, y, z = 2, 3, 1
 print('x:{0},y:{1},z:{2}'.format(z, x, y))
 # Output: x:1,y:2,z:3
 
+for i in range(10):
+    if i%3==0:
+        print(i+2)
+# 25811
+
 data = {-1, 1, 2}
 
 
@@ -1463,6 +1486,15 @@ for a in range(5):
     next(x)
 print(next(x))
 # Output: 5
+
+def fun():
+    for x in range(10,0,-1):
+        yield(x)
+x = fun()
+for a in range(6):
+    next(x)
+print(next(x))
+# 4
 
 x = [1, 2, 3]
 nx = [i**2 for i in x if i % 2 == 0]
