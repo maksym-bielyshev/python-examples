@@ -1,5 +1,17 @@
 
 
+class List(list):
+    def __matmul__(self, other):
+        newlist = List()
+        for k in range(len(other)):
+            newlist.append(self[k] + other[k])
+        return newlist
+l1 = List((1,2,3,4,5))
+l2 = List((9,8,7,6,5))
+l3 = l1 @ l2
+print(sum(l3))
+# 50
+
 s = 'sololearn'
 try:
     print(s.find('s'))
@@ -907,6 +919,11 @@ a = list2 is list1
 b = list3 is list1
 print(a, b)
 # >>> True False
+
+a = [1,2,3]
+del a[::-1]
+print(a)
+# []
 
 a = 257
 b = 257
