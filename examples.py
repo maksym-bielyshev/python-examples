@@ -229,6 +229,10 @@ text = 'SoloLearn'
 print(text[:-1])
 # SoloLear
 
+text = 'SoloLearn'
+print(text[::-1])
+# nraeLoloS
+
 myList = [i for i in range(8)]
 for i in myList:
     myList.remove(i)
@@ -273,6 +277,16 @@ def f(m:str, v:str) -> int:
     return f.__annotations__
 print(f('a', 'b')['m'])
 # <class 'str'>
+
+def ZeroRecursive(a):
+    if a == []:
+        return
+    a[0] = 0
+    ZeroRecursive(a[1:])
+a = [1,2,3,4]
+ZeroRecursive(a)
+print(a)
+# [0, 2, 3, 4]
 
 def function(number):
     return (number%3==1 or number%4==2)
@@ -532,6 +546,10 @@ def outer_func(msg):
 var = outer_func("hello world!")
 var()
 # message is hello world!
+
+str = "Learning is fun!"
+print(str.partition('is'))
+# ('Learning ', 'is', ' fun!')
 
 a = (8, -1, 3)
 a.sort()
@@ -1021,6 +1039,12 @@ b = [val(x) for x in a]
 print(abs(max(a) - max(b)))
 # >>> 3
 
+
+def myltiplying(x):
+    j = range(1, x+1)
+    return eval("*".join([str(i) for i in j]))
+print(myltiplying(3))
+# 6
 
 def f(n, v):
     n = len(v)
