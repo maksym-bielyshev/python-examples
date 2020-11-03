@@ -1,5 +1,16 @@
 
 
+i = '3471'
+z = i[::-1]
+if i == z:
+    print(z)
+else:
+    print(z[2] * 2 + z[3] * 2)
+# 4433
+
+print(int(3*'3')+2*int('1'*2))
+# 355
+
 class List(list):
     def __matmul__(self, other):
         newlist = List()
