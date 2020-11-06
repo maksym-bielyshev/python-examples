@@ -8,6 +8,33 @@ else:
     print(z[2] * 2 + z[3] * 2)
 # 4433
 
+a=[1,2,3]
+b=a
+c=a[:]
+a[0]=4
+print(b, c)
+# [4, 2, 3] [1, 2, 3]
+
+arr = [1,0,1,0]
+a = all(arr)
+s = sum(arr)
+if a or s:
+    print(a or s)
+else:
+    pass
+# 2
+
+a = 6
+a, b = 0, a+1
+print(a*'str')
+#
+
+a = [1,2,3]
+b = a
+a = a+[4]
+print(len(b))
+# 3
+
 print(int(3*'3')+2*int('1'*2))
 # 355
 
