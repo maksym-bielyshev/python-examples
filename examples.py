@@ -24,6 +24,13 @@ else:
     pass
 # 2
 
+sex = 'F'
+if (sex == 'M' or 'm'):
+    print('Male')
+else:
+    print('Female')
+# Male
+
 a = 6
 a, b = 0, a+1
 print(a*'str')
@@ -193,6 +200,20 @@ vals = [2,4,7]
 new = "{1}{2}{1}".format(vals[0],vals[2],vals[1])
 print(new)
 # 747
+
+d = sorted('cba')
+a,b,c = d
+d = c,b,a
+print(''.join(d))
+# cba
+
+def f(n):
+    x = y = 1.0
+    for i in range(1, n):
+        x, y = y, x+y
+    return y/x
+print(f(3))
+# 1.5
 
 x = [1,2,3]
 def func(x):
@@ -485,6 +506,12 @@ c = a + b
 print(c)
 # (5, 6, 7)
 
+def cm():
+    return[lambda x:i*x for i in range(3)]
+for m in cm():
+    print(m(1), end="")
+# 222
+
 def capitalize_odd_indexes(string):
     capitalization = []
     i = 0
@@ -672,6 +699,12 @@ d = {'s':'o', 'l':'o', 'l': 'e', 'a': 'r', 'n':'!'}
 print(len(d))
 # 4
 
+d = {k:v for k, v in ('a1', 'b2')}
+d['a1'] = 1
+d['b2'] = 2
+print(len(d))
+# 4
+
 a = [1,2,3]
 b = a
 a = a+[4]
@@ -712,6 +745,13 @@ except:
     pass
 print(s[1], n[1])
 # b 2
+
+l=[]
+for i in range(17):
+    l.append(i*2)
+m=[x&1 for x in l]
+print(sum(m))
+# 0
 
 def myAdd(x = 2, y = 4, *args):
     while (x < y):
