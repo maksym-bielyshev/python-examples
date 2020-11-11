@@ -160,6 +160,12 @@ d = 0 or 1 and 0
 print(a, b, c, d, sep='')
 # 0110
 
+list1 = [1,2]
+list2 = list1
+all_lists = {list1, list2}
+print(len(all_lists))
+# TypeError: unhashable type: 'list'
+
 import copy
 a = [1, [2,3]]
 b = copy.deepcopy(a)
