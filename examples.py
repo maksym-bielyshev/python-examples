@@ -42,6 +42,12 @@ a = a+[4]
 print(len(b))
 # 3
 
+x, y = 0, True
+x = x + 1
+y = int(True)
+print(id(x) == id(y))
+# True
+
 print(int(3*'3')+2*int('1'*2))
 # 355
 
