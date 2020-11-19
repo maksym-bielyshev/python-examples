@@ -51,6 +51,14 @@ print(id(x) == id(y))
 print(int(3*'3')+2*int('1'*2))
 # 355
 
+x = {1:0, 0:1}
+y = [1, [4,6,5,4], 2]
+print(list(set(y[x[0]]))[1])
+# 5
+
+print(2**5*6+(5))
+# 197
+
 class List(list):
     def __matmul__(self, other):
         newlist = List()
@@ -557,6 +565,17 @@ print(a != a[2][2][2])
 
 r = [i**2 for i in range(4) if i**2%2==0]
 print(r[0]+r[1])
+# 4
+
+a = [1,5,13,4,19,12]
+b = [5,12,48,6,14,1]
+c = len(set(a)&set(b))
+print(c)
+# 3
+
+from fractions import Fraction
+frac = Fraction(2,5)
+print(frac * 10)
 # 4
 
 def main():
@@ -1910,6 +1929,8 @@ if(b <= 20):
 print(a)
 # Output: -5
 
+print(-5 // 2)
+# -3
 
 def recf(lst, s=0):
     if len(lst) == 0:
