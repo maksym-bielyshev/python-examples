@@ -1315,6 +1315,9 @@ else:
     print(3)
 # Output: 3
 
+print(3**1**2**4)
+# 3
+
 lst = [34, 67, 34]
 if lst.sort() == sorted(lst):
     print('true')
