@@ -71,6 +71,13 @@ l3 = l1 @ l2
 print(sum(l3))
 # 50
 
+l1 = [1,2**3,8]
+l2 = [2,4,5]
+l3 = [4,5,4%3]
+x = list(map(lambda x,y,z:(x+y+z)*2,l1,l2,l3))
+print(x)
+# [14, 34, 28]
+
 s = 'sololearn'
 try:
     print(s.find('s'))
@@ -106,6 +113,18 @@ print("p" is "p", [] is [])
 
 print(float("5")+int("2")*int(2==3))
 # 5.0
+
+def gen():
+    global a
+    for num in [2,4,8]:
+        a += 1
+        yield(num*0.5)
+a = 0.0
+lst = []
+for val in gen():
+    lst.append(int(a==val))
+print(sum(lst))
+# 2
 
 class Myclass:
     def __init__(self):
@@ -571,6 +590,13 @@ a = [1,5,13,4,19,12]
 b = [5,12,48,6,14,1]
 c = len(set(a)&set(b))
 print(c)
+# 3
+
+from fractions import Fraction
+frac = Fraction(1,3)
+frac = frac + 2
+frac = frac + Fraction(2,3)
+print(frac)
 # 3
 
 from fractions import Fraction
