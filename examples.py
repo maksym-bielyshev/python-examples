@@ -1403,6 +1403,13 @@ def func(n):
 print(func(7))
 # Output: 15
 
+def func(x=0):
+    n = 0
+    n = n + 1
+    return n
+print(func(func()))
+# 1
+
 a = [0]
 
 
