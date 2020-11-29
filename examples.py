@@ -79,6 +79,11 @@ print(x)
 # [14, 34, 28]
 
 s = 'sololearn'
+for i in s:
+    [print(i if('a' < i) else 0, end='')]
+# solole0rn
+
+s = 'sololearn'
 try:
     print(s.find('s'))
     print(s.find('l'))
@@ -165,11 +170,17 @@ print(x[0][0] + x[1][0])
 import numpy as np
 a = np.array([[1,2,3], [0,1,4]])
 print(a.size)
+# 6
 
 a = range(6)
 r = a[3+1]*4%3
 print(r)
 # 1
+
+import numpy as np
+x = np.array([[1,2],[2,3]])
+print(x.sum(axis=0))
+# [3 5]
 
 import numpy as np
 ar = np.ones((3,2))
@@ -198,6 +209,15 @@ list2 = list1
 all_lists = {list1, list2}
 print(len(all_lists))
 # TypeError: unhashable type: 'list'
+
+list1 = []
+list2 = []
+for i in range(5)[::-1]:
+    list1.append(i)
+for j in list1[::-2]:
+    list2.append(j+1)
+print(list1[2])
+# 2
 
 import copy
 a = [1, [2,3]]
@@ -685,6 +705,12 @@ def func(x):
 q = ['abc', 'def']
 print(id(q) == func(q))
 # True
+
+def func(x):
+    for i in range(x):
+        yield i**2
+print(",".join(list(func(3))))
+# TypeError: sequence item 0: expected str instance, int found
 
 a = "eggs"
 b = a
