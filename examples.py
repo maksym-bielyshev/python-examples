@@ -167,6 +167,22 @@ x[0][0] = 1
 print(x[0][0] + x[1][0])
 # 2
 
+def func(num):
+    g = (lambda x:1 if x==1 else x*g(x-1))
+    return g(num)
+print(func(4))
+# 24
+
+s = lambda a: a = 4
+print(s(2))
+# SyntaxError: can't assign to lambda
+
+print('a' or 'b')
+print('a' and 'b')
+print('' or 'a')
+print('' and 'b')
+# a b a
+
 import numpy as np
 a = np.array([[1,2,3], [0,1,4]])
 print(a.size)
