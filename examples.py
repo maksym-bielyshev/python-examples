@@ -498,7 +498,10 @@ print(len(lst))
 list1 = ["carrot", "banana", "mango"]
 list2 = del list[1]
 print(list1)
-# SyntaxError
+
+# list2 = del list[1]
+#           ^
+# SyntaxError: invalid syntax
 
 lst = [-2, 0, 2, 4]
 c = sum(i*2 for i in lst)
