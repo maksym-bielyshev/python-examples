@@ -429,6 +429,20 @@ b = list(filter(function,a))
 print(len(b))
 # 5
 
+a = round(1234.1234, -2)
+print(a)
+# 1200.0
+
+foo = print()
+print(foo == None)
+# True
+
+a = [1,2,3,4]
+b = a[::-1]
+c = b[::-2]
+print (c[1])
+# 3
+
 from itertools import *
 for i in count(20, -3):
     print(i)
@@ -498,6 +512,9 @@ print(len(lst))
 list1 = ["carrot", "banana", "mango"]
 list2 = del list[1]
 print(list1)
+# list2 = del list[1]
+#           ^
+# SyntaxError: invalid syntax
 
 import numpy as np
 a = np.array([1,2,3,5,8])
@@ -506,10 +523,6 @@ c = a + b
 c = c * a
 print(c[2])
 # 21
-
-# list2 = del list[1]
-#           ^
-# SyntaxError: invalid syntax
 
 lst = [-2, 0, 2, 4]
 c = sum(i*2 for i in lst)
