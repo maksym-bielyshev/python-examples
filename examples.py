@@ -226,6 +226,15 @@ all_lists = {list1, list2}
 print(len(all_lists))
 # TypeError: unhashable type: 'list'
 
+x = True is True or not False
+y = not x
+if x == True:
+    x = not not not y is x
+elif x == False:
+    x = y is False
+print(x)
+# True
+
 list1 = []
 list2 = []
 for i in range(5)[::-1]:
@@ -308,6 +317,11 @@ arr = (1,2,3,4,3,2,1)
 a=list(map(lambda x:x%2==0,arr))
 print(len(a))
 # 7
+
+person = {'name':'dt', 'age':20, 'sex':'male'}
+fset = frozenset(person)
+print(fset)
+# frozenset({'sex', 'age', 'name'})
 
 print(True ** False / True)
 # 1.0
@@ -594,6 +608,17 @@ obj.n = 1000
 print(obj.n)
 # 1000
 
+class Myclass:
+    def __init__(self, a = 0, b = 0):
+        self.a = a
+        self.b = b
+    @classmethod
+    def value_ax10(cls,value):
+        return cls(value * 10)
+obj = Myclass(1,2).value_ax10(3)
+print(obj.a, obj.b)
+# 30 0
+
 my_list = ["car", "plane", "train", "bike", "rocket"]
 new_list = sorted(my_list, key = lambda x:x[-2])
 print(new_list)
@@ -757,6 +782,9 @@ b = a
 a = "spam"
 print(b)
 # eggs
+
+print('z'>'a')
+# True
 
 def func1(x):
     return x + 1
@@ -1607,6 +1635,14 @@ for i, j in my_dict.items():
     L.append(j)
 print(len(L))
 # Output: 4
+
+x = 'range (999)'
+counter = 0
+for i in eval(x):
+    x = 'range (1000)'
+    counter += 1
+print(counter)
+# 999
 
 x, y, z = 2, 3, 1
 print('x:{0},y:{1},z:{2}'.format(z, x, y))
