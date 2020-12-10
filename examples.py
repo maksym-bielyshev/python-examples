@@ -101,6 +101,18 @@ c = {'E', 'B', 'A'}
 print((b^c)-a)
 # set()
 
+a = 5
+b = 7
+try:
+    a = a%b
+except ZeroDivisionError:
+    a = 0
+else:
+    b = 2
+finally:
+    print(a*b)
+# 10
+
 gun = lambda x: x * x
 data = 1
 for i in range(1, 3):
@@ -783,6 +795,14 @@ a = "spam"
 print(b)
 # eggs
 
+num = {1, 2, 3, 4, 5}
+word = ['spam', 'sausage', 'eggs']
+if 3 in num and not 'spam' in word:
+    print(word[3])
+else:
+    print(word[0])
+# spam
+
 print('z'>'a')
 # True
 
@@ -1314,6 +1334,16 @@ _list = ['Java', 'Python', 'C', 'R']
 print(max(_list, key=func))
 # >>> Python
 
+word = 'hbornsdua'
+neWord = ''
+count = 0
+while count < 9:
+    if (count % 2) == 0:
+        neWord += word[count]
+    count += 1
+print(neWord)
+# honda
+
 
 def multiplying(x):
     j = range(1, x + 1)
@@ -1627,6 +1657,13 @@ for i in c:
     n -= 1
 print(n)
 # Output: 5
+
+L = [[]]*3
+L[0] = L[0]+[[]]
+print(L[0] == L[1])
+print(L[0] is L[1])
+print(len(L[0]) == bool(L[0]))
+# False False True
 
 my_dict = {"Bill ": "Gates", "Steve": "Jobs"}
 L = []
@@ -1976,6 +2013,10 @@ a = sorted(tens)
 print(a)
 # Output: [(10, 40), (20, 30), (20, 60)]
 
+A = {1, 2, 3, 5, 3, 2, 1}
+print(sum(((list(filter(lambda x: x % 2 == 0, A))))))
+# 2
+
 print(True, True, True == (True, True, True))
 # Output: True True False
 
@@ -2005,6 +2046,27 @@ for i in list1:
     count += 1
 print(count)
 # Output: 4
+
+a = lambda x:x!=1
+b = [n for n in range(5)]
+print(list(filter(a,b)))
+# [0,2,3,4]
+
+def select(i):
+    return i%3
+for x in range(10):
+    if x%5 == 0:
+        print(select(x))
+# 02
+
+A = [4,3,1,6,8,5,2,7]
+n = len(A)
+for pos in range(n):
+    m = min(A[:n-pos])
+    A.remove(m)
+    A.append(m)
+print(A)
+# [1, 2, 3, 4, 5, 6, 7, 8]
 
 print(2**0, 0**0, 0**1, 2**1)
 # Output: 1 1 0 2
