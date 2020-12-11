@@ -342,6 +342,20 @@ squares = [0, 1, 4, 9, 16, 25, 36]
 print(squares[1:1:-1])
 # []
 
+s1 = frozenset([0,1,1])
+s2 = frozenset([1,2,3,3,2])
+s3 = {s1, s2}
+total = 0
+for e in s3:
+    total += sum(e)
+print(total)
+# 7
+
+arr = list(5)
+n = len(arr)
+print(n)
+# TypeError: 'int' object is not iterable
+
 n = int('10' + '0' * 5)
 for i in range(6):
     n /=10
@@ -361,6 +375,21 @@ my_list = [([]), [()]]
 for i in my_list:
     print(bool(i), end='')
 # False True
+
+n = 0
+for i in range(1+1, 3+2):
+    n += i
+print(int(str(n)))
+# 9
+
+for i in range(10):
+    if i == 5:
+        break
+    else:
+        print(i)
+else:
+    print('Now')
+# 0 1 2 3 4
 
 x = True
 y = False
@@ -1456,6 +1485,11 @@ print(*s)
 
 x = True
 y = False
+print(not x == x or y == y)
+# True
+
+x = True
+y = False
 z = False
 if not x or y:
     print(1)
@@ -1658,12 +1692,23 @@ for i in c:
 print(n)
 # Output: 5
 
+l = [1,9,65,4,0]
+a = l.sort()
+b = sorted(l)
+print(a == b)
+# False
+
 L = [[]]*3
 L[0] = L[0]+[[]]
 print(L[0] == L[1])
 print(L[0] is L[1])
 print(len(L[0]) == bool(L[0]))
 # False False True
+
+my_dict = {0:'a', 1:'b', 2:'c', 3:'d'}
+print(my_dict[1:3])
+TypeError: unhashable type: 'slice'
+
 
 my_dict = {"Bill ": "Gates", "Steve": "Jobs"}
 L = []
@@ -1704,6 +1749,11 @@ analyze(data)
 d = {x: x**2 for x in range(1, 10, 3)}
 print(d[7])
 # Output: 49
+
+x = 2
+a = [x**3-1 for xi in range(7)]
+print(a[1])
+# 7
 
 a = []
 a.append(a)
@@ -1802,6 +1852,13 @@ x = (0, 1, 2)
 print(a + b + c)
 # Output: 3
 
+
+def fun(a):
+    x = range(a)
+    y = eval('*'.join([str(i+1) for i in x]))
+    return y
+print(fun(6))
+# 720
 
 def fun():
     for x in range(10):
