@@ -383,7 +383,7 @@ print(int(str(n)))
 # 9
 
 for i in range(10):
-    if i == 5:
+    if i == 5:a.append(9)
         break
     else:
         print(i)
@@ -702,6 +702,17 @@ print(count)
 arr = [1, 2, 3, None, (), [],]
 print(len(arr))
 # 6
+
+arr = [1,2]
+def fun(n, a):
+    if(a is not arr):
+        a.append(n)
+    return list(a)
+a = arr
+a = fun(3,a)
+a = fun(4,a)
+print(a)
+# 1 2 4
 
 a = [1,2]
 a.append(a)
@@ -1754,6 +1765,13 @@ x = 2
 a = [x**3-1 for xi in range(7)]
 print(a[1])
 # 7
+
+a = [2,4,8]
+a.append(9)
+b = a * 3
+c = a + b
+print(b[3] - c[11])
+# 0
 
 a = []
 a.append(a)
