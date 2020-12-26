@@ -1,5 +1,26 @@
 
 
+x=10
+y=x+2
+int(str(y)+"2")
+print(y)
+# 12
+
+s=['red','green','blue','white']
+p=[1,2,3,4]
+r=''
+for i in range(len(s)):
+    r+=s[i][p[i]]
+print(r)
+# eeee
+
+a = 5
+b = 7
+if not a != b - 2:
+    b = --a
+print(a+b)
+# 10
+
 i = '3471'
 z = i[::-1]
 if i == z:
@@ -1252,6 +1273,12 @@ print(list(zip(*x + [y]))[1][1])
 print(list(zip(*x + [y]))[0][1])
 # 17
 
+nums = {2:'two', 1:'three', 3:'four'}
+for num in set(nums.keys()):
+    if nums[num] > 'four':
+        print(num, end='')
+# 12
+
 L = [1,2,3,4,5,6,7,8,9,0]
 L.sort(key=lambda x:x%3, reverse=True)
 print(L)
@@ -1272,6 +1299,14 @@ for i in range(3):
     my_list.pop(i)
 print(my_list)
 # >>> [5, 7, 1]
+
+import re
+w = "coder"
+if re.mathc(w, "code"):
+    print("a")
+else:
+    print('b')
+# b
 
 def my_code():
     return 0
