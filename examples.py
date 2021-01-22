@@ -1,5 +1,31 @@
 
 
+a, b, c = 2, 7, 8
+print(a + b * a // c)
+# 3
+
+def s(*values):
+    s = 0
+    for v in values:
+        s=s+v
+    return s
+s=s(1,2,3,4,5)
+print(s)
+# 15
+
+import re
+pattern = r"((0-9])|(1[0-2]))"
+match = re.match(pattern, "13")
+if match:
+    print("match")
+else:
+    print("no match")
+# no match
+
+l = list((1,2,3,4,5))
+print(l[1:3]+l[4:2])
+# [2, 3]
+
 x=10
 y=x+2
 int(str(y)+"2")
