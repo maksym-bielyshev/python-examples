@@ -1,5 +1,17 @@
 
 
+def write(lst, text):
+    lst.append(text)
+a = 50
+b = a ** 2
+c = [a]
+if(b % a == 0):
+    write(c,b)
+else:
+    write(c,a)
+print(c[-1])
+# 2500
+
 a, b, c = 2, 7, 8
 print(a + b * a // c)
 # 3
