@@ -1,5 +1,11 @@
 
 
+d = {10: "x", 1:"wx", 2:"yz"}
+d.setdefault(1)
+d.setdefault(3)
+print(d[1] * len(d))
+# wxwxwxwx
+
 def write(lst, text):
     lst.append(text)
 a = 50
