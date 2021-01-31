@@ -1,5 +1,12 @@
 
 
+set1 = {1, 2, 3, 4, 5, 6}
+set2 = {4, 5, 6, 7, 8, 9}
+set1.add(7)
+set2.add(10)
+print(set1^set2)
+# {1, 2, 3, 8, 9, 10}
+
 d = {10: "x", 1:"wx", 2:"yz"}
 d.setdefault(1)
 d.setdefault(3)
