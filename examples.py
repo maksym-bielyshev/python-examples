@@ -1,5 +1,24 @@
 
 
+def f(r):
+    j = range(1, r + 1)
+    t = eval("**".join([str(i) for i in j]))
+    return t
+print(f(3))
+# 1
+
+class Vec:
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+    def __add__(self,other):
+        return Vec(self.x + other.x, self.y + other.y)
+v1 = Vec(3, 4)
+v2 = Vec(1, 2)
+r = v1 + v2
+print(r.x + r.y)
+# 10
+
 set1 = {1, 2, 3, 4, 5, 6}
 set2 = {4, 5, 6, 7, 8, 9}
 set1.add(7)
