@@ -1,5 +1,16 @@
 
 
+class sololearn():
+    pass
+if __name__ == "__main__":
+    x = sololearn()
+    y = sololearn()
+    if(x == y):
+        print(1)
+    else:
+        print(2)
+# 2
+
 def f(r):
     j = range(1, r + 1)
     t = eval("**".join([str(i) for i in j]))
