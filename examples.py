@@ -1,5 +1,28 @@
 
 
+class Vec:
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+    def __add__(self,other):
+        return Vec(self.x + other.x, self.y + other.y)
+v1 = Vec(3, 4)
+v2 = Vec(1, 2)
+r = v1 + v2
+print(r.x * r.y)
+# 24
+
+z = ['Dodge', 'Ford', 'Chevy', 'Toyota']
+x = ['Bass', 'Bluegill', 'Salmon']
+y = ['cow', 'Chicken']
+a = len(x)
+b = len(z)
+for i in range(len(y)):
+    a = a + b
+    c = a - b
+print(c)
+# 7
+
 class sololearn():
     pass
 if __name__ == "__main__":
@@ -365,6 +388,13 @@ a[0] = 3
 a[1][1] = 5
 print(b)
 # [1, [2,3]]
+
+a = [1, [2, 3]]
+b = a[:]
+a[0] = 3
+a[1][1] = 5
+print(b)
+# [1, [2, 5]]
 
 arr = [1, 4, 2]
 x = 0
