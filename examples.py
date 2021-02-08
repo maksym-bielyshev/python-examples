@@ -1,5 +1,18 @@
 
 
+def testFunc(x, y = []):
+    y.append(x)
+    return y
+a = testFunc(1)
+b = testFunc(2, [])
+c = testFunc(3)
+print(c)
+# [1, 3]
+
+l = [i**2 for i in range(5) if i**2%2==0]
+print(l[2])
+# 16
+
 class Vec:
     def __init__(self,x,y):
         self.x = x
