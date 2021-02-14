@@ -1,5 +1,17 @@
 
 
+a, b = 0, 0
+class myClass():
+    a, b = 1, 1
+    def __init__(self):
+        self.a = 2
+        self.b = 2
+    def __str__(self):
+        return str(a + b)
+m = myClass()
+print(m)
+# 0
+
 def fact(x):
     if (x==0):
         return 1
