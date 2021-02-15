@@ -19,6 +19,14 @@ m = myClass()
 print(m)
 # 0
 
+def fact(x):
+    if (x==0):
+        return 1
+    else:
+        return(x * fact(x - 1))
+print(fact(3))
+# 6
+
 def testFunc(x, y = []):
     y.append(x)
     return y
