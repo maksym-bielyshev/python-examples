@@ -1,5 +1,12 @@
 
 
+a = [2, 4, 8]
+a.append(9)
+b = a * 3
+c = a + b
+print(b[3] - c[11])
+# 11
+
 a, b = 0, 0
 class myClass():
     a, b = 1, 1
