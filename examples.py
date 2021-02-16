@@ -1,5 +1,10 @@
 
 
+names = ['Amir', 'Barry', 'Charles']
+loc = names.index("Edward")
+print(loc)
+# ValueError: 'Edward' is not in list
+
 a = [2, 4, 8]
 a.append(9)
 b = a * 3
