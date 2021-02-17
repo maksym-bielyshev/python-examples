@@ -1,5 +1,11 @@
 
 
+a = set([2, 8, 14, 18, 30, 38])
+b = set([4, 6, 8, 15, 24, 40])
+x = a | b
+print(len(x))
+# 11
+
 names = ['Amir', 'Barry', 'Charles']
 loc = names.index("Edward")
 print(loc)
