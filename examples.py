@@ -1,5 +1,16 @@
 
 
+a = 'b'
+b = {a: 'a', 'a': a}
+print(b[a])
+# a
+
+arr = []
+arr.append(1)
+arr.extend([5]+[2,3])
+print(arr)
+# [1, 5, 2, 3]
+
 a = set([2, 8, 14, 18, 30, 38])
 b = set([4, 6, 8, 15, 24, 40])
 x = a | b
