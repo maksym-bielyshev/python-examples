@@ -6,6 +6,35 @@ num2[0] = 5
 print(num1[0])
 # 5
 
+a = 'b'
+b = {a: 'a', 'a': a}
+print(b[a])
+# a
+
+arr = []
+arr.append(1)
+arr.extend([5]+[2,3])
+print(arr)
+# [1, 5, 2, 3]
+
+a = set([2, 8, 14, 18, 30, 38])
+b = set([4, 6, 8, 15, 24, 40])
+x = a | b
+print(len(x))
+# 11
+
+names = ['Amir', 'Barry', 'Charles']
+loc = names.index("Edward")
+print(loc)
+# ValueError: 'Edward' is not in list
+
+a = [2, 4, 8]
+a.append(9)
+b = a * 3
+c = a + b
+print(b[3] - c[11])
+# 11
+
 a, b = 0, 0
 class myClass():
     a, b = 1, 1
