@@ -1,5 +1,11 @@
 
 
+num1 = [1, 3, 4, 5]
+num2 = num1
+num2[0] = 5
+print(num1[0])
+# 5
+
 a, b = 0, 0
 class myClass():
     a, b = 1, 1
