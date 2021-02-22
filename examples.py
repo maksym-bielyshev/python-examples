@@ -1,5 +1,12 @@
 
 
+a = [8, 0, 4, 6, 1]
+if (a is a[:]):
+    print(True)
+else:
+    print(False)
+# False
+
 a = 'b'
 b = {a: 'a', 'a': a}
 print(b[a])
