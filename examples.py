@@ -7,6 +7,12 @@ else:
     print(False)
 # False
 
+num1 = [1, 3, 4, 5]
+num2 = num1
+num2[0] = 5
+print(num1[0])
+# 5
+
 a = 'b'
 b = {a: 'a', 'a': a}
 print(b[a])
