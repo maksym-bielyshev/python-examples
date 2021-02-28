@@ -1,5 +1,10 @@
 
 
+num = 5
+while num in range(6):
+    print(num)
+# Infinite loop
+
 a = [8, 0, 4, 6, 1]
 if (a is a[:]):
     print(True)
