@@ -1,5 +1,17 @@
 
 
+a = [2, 4, 6, 8]
+sum = 0
+for p, n in enumerate(a, 2):
+    sum += p
+print(sum)
+# 14
+
+a = '10'
+b = a * 0 + 1
+print(b)
+# TypeError: can only concatenate str (not "int") to str
+
 num = 5
 while num in range(6):
     print(num)
