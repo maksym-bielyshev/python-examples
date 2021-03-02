@@ -1,5 +1,22 @@
 
 
+def x(a = 0):
+    def y(b = a):
+        return a + b
+    if a == 0:
+        return y
+    return y(a)
+print(x(2) + x()(3))
+# 7
+
+class Animal:
+    def __init__(self, id):
+        self.id = id
+crow = Animal(100)
+crow.__dict__['age'] = 49
+print(crow.age + len(crow.__dict__))
+# 51
+
 a = [2, 4, 6, 8]
 sum = 0
 for p, n in enumerate(a, 2):
