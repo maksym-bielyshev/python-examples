@@ -1,5 +1,9 @@
 
 
+s = reversed("Hello")
+print(s)
+# <reversed object at 0x03BEC990>
+
 def x(a = 0):
     def y(b = a):
         return a + b
