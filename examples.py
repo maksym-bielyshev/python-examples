@@ -1,5 +1,17 @@
 
 
+x = 5
+y = 5
+NewVar1 = int(x is y) ** 2
+NewVar2 = int(x == y) ** 0
+print(NewVar1 + NewVar2)
+# 2
+
+x = "slooealrn"
+y = x[:]
+print(id(x) == id(y))
+# True
+
 s = reversed("Hello")
 print(s)
 # <reversed object at 0x03BEC990>
