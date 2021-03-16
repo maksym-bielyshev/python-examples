@@ -1,5 +1,46 @@
 
 
+def ZeroRecursive(a):
+    if a == []:
+        return
+    a[0] = 0
+    ZeroRecursive(a[1:])
+a = [1,2,3,4]
+ZeroRecursive(a)
+print(a)
+# False
+
+a = [0, 1, 4, 9, 16, 25]
+for v in a:
+    if not a.index(v) ** 2 != v:
+        print("True")
+        break
+    else:
+        print("False")
+        break
+# True
+
+def get(arr):
+    return(x for x in arr)
+print(get([1, 2, 3, 4, 5]))
+# <generator object get.<locals>.<genexpr> at 0x7f9d52cc7f50>
+
+a = "Hello !"
+newHello = []
+for hi in a:
+    for by in range(2):
+        newHello.append(hi)
+print(len(newHello))
+# 14
+
+def encrypt(string):
+    if len(string) != 0:
+        print(string[::-2])
+    else:
+        pass
+encrypt("password")
+# dosa
+
 x = 5
 y = 5
 NewVar1 = int(x is y) ** 2
