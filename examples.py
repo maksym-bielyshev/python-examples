@@ -1,5 +1,10 @@
 
 
+def xor(a, b):
+    return a != b
+print(xor(4 < 5,5 == 25/5))
+# False
+
 def ZeroRecursive(a):
     if a == []:
         return
