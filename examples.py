@@ -1,5 +1,13 @@
 
 
+a = [7, 3, 9, 5]
+b = [8, 0, 4]
+if a > b:
+    print(len(a))
+else:
+    print(len(b))
+# 3
+
 def xor(a, b):
     return a != b
 print(xor(4 < 5,5 == 25/5))
