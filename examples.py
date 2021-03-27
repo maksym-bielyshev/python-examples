@@ -1,5 +1,45 @@
 
 
+class MyClass():
+    n = 0
+    def __init__(self):
+        MyClass.n += 1
+    def __del__(self):
+        MyClass.n -= 1
+a = MyClass()
+print(a.n)
+b = MyClass()
+print(b.n)
+a = MyClass()
+print(a.n)
+# 122
+
+l = list((1,2,3,4,5))
+print(l[1:3]+l[4:2])
+# [2,3]
+
+from fractions import Fraction
+frac = Fraction(1,3)
+frac = frac + Fraction(1,2)
+frac = frac + Fraction(1,6)
+print(frac)
+# 1
+print(type(int))
+# <class 'type'>
+
+def f(n):
+    if n == 1:
+        return '0'
+    else:
+        return n * f(n - 1)
+print(int(f(5) == 120))
+# 0
+
+def mystery(x, y):
+    return (int(x/10**y)*(10**y))
+print(mystery(456, 2))
+# 400
+
 a = [7, 3, 9, 5]
 b = [8, 0, 4]
 if a > b:
