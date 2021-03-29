@@ -1,5 +1,15 @@
 
 
+class A:
+    @staticmethod
+    def sample(self):
+        print('static method')
+    @classmethod
+    def sample(self):
+        print('class method')
+A.sample()
+# class method
+
 class MyClass():
     n = 0
     def __init__(self):
