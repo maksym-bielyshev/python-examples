@@ -7,7 +7,7 @@ list1 = filter(None, re.split("[,!]+", sent))
 for i in list1:
     count += 1
 print(count)
-
+# 4
 
 x = True
 y = False
