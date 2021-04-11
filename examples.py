@@ -1,5 +1,95 @@
 
 
+import re
+sent = "hi, how, are ! you doing"
+count = 0
+list1 = filter(None, re.split("[,!]+", sent))
+for i in list1:
+    count += 1
+print(count)
+
+
+x = True
+y = False
+z = False
+if x or y and z:
+    print('yes')
+else:
+    print('no!')
+# yes
+
+thelist = [(1,2,3), (4,5,6), (7,8,9)]
+sumx = 0
+
+for x,y,z in thelist:
+    sumx += y
+
+print(sumx)
+# 15
+
+import numpy as np
+arr1 = np.array([[0, 1], [1, 2]])
+print(arr1.size)
+# 4
+
+a = 9**19 == int(float(9**19))
+print(int(a))
+# 0
+
+for n in range(1, 5):
+    if n == 5:
+        x = y + n
+    else:
+        y = n
+print(x)
+# NameError: name 'x' is not defined
+
+a = [1]
+b = [[1]]
+if (a == b):
+    print(1)
+elif (a is b) or (a is b[0]):
+    print(2)
+elif (a in b) and (a == b[0]):
+    print(3)
+else:
+    print(4)
+# 3
+
+name = "Paul"
+print("His name is {}.").format(name)
+# AttributeError: 'NoneType' object has no attribute 'format'
+
+a = 45
+b = a % (a - 23)
+c = a * b / 9
+c += b
+print(a)
+# 45
+
+def foo():
+    print(globals() == locals())
+foo()
+print(globals() == locals())
+# False True
+
+def first(b):
+    c = list(b)
+    d = range((len(c)))
+    e = c[d[0]] + c[d[len(c) -1]]
+    print(e)
+a = "aim for number 1"
+f = first(a)
+# a1
+
+def extend(num, list=[]):
+    list.append(num)
+    return(list)
+x = extend(1)
+y = extend(2)
+print(x, y)
+# [1, 2] [1, 2]
+
 class A:
     @staticmethod
     def sample(self):
